@@ -35,7 +35,7 @@
             :vertical="true"
           >
             Not Yet Implemented. Contact me in my email. paulcruz069@gmail.com
-            <v-btn color="pink" flat @click="snackbar = false"></v-btn>
+            <v-btn color="pink" flat @click="snackbar = false">Close</v-btn>
           </v-snackbar>
         </v-flex>
       </v-layout>
