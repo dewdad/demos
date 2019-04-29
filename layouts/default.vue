@@ -4,11 +4,13 @@
       <v-list class="pa-1">
         <v-list-tile avatar tag="div">
           <v-list-tile-avatar>
-            <img src="https://randomuser.me/api/portraits/men/85.jpg" />
+            <img
+              src="https://avatars1.githubusercontent.com/u/30888544?s=460&v=4"
+            />
           </v-list-tile-avatar>
 
           <v-list-tile-content>
-            <v-list-tile-title>John Leider</v-list-tile-title>
+            <v-list-tile-title>Paul Jason Cruz</v-list-tile-title>
           </v-list-tile-content>
 
           <v-list-tile-action>
@@ -38,8 +40,6 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar fixed app>
-      <v-toolbar-side-icon class="hidden-sm-and-up" @click="drawer = true">
-      </v-toolbar-side-icon>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
           v-for="(item, index) in items"
@@ -60,6 +60,26 @@
         </transition>
       </v-container>
     </v-content>
+    <v-bottom-nav
+      :active.sync="bottomNav"
+      :color="color"
+      :value="true"
+      fixed
+      dark
+      app
+    >
+      <v-btn
+        v-for="(item, index) in items"
+        :key="index"
+        flat
+        dark
+        nuxt
+        :to="item.to"
+      >
+        <span>{{ item.title }}</span>
+        <v-icon>{{ item.icon }}</v-icon>
+      </v-btn>
+    </v-bottom-nav>
   </v-app>
 </template>
 
@@ -70,6 +90,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
+      bottomNav: 0,
       items: [
         {
           icon: 'home',

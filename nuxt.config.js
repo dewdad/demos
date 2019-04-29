@@ -9,7 +9,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 
 export default {
   mode: 'universal',
-  router: { base : '/VueJS-Portfolio/'},
+  router: { base : process.env.DEPLOY_ENV === 'GH_PAGES' ? '/VueJS-Portfolio/' : '/'},
   /*
    ** Headers of the page
    */

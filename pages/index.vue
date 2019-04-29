@@ -14,13 +14,13 @@
       @mousemove="doDrag"
     >
       <v-flex xs12 sm8 md6>
-        <div
-          class="title-home display-4 hidden-sm-and-down"
-          :style="titleStyle"
-        >
+        <div class="title-home display-4 hidden-xs-only" :style="titleStyle">
           PAUL CRUZ DEVELOPER
         </div>
-        <div class="title-home display-2 hidden-sm-and-up" :style="titleStyle">
+        <div
+          class="title-home display-2 hidden-sm-and-up mt-5"
+          :style="titleStyle"
+        >
           PAUL CRUZ DEVELOPER
         </div>
         <div class="subtitle-home"></div>
