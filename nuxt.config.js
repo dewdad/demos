@@ -1,9 +1,15 @@
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 import pkg from './package'
 
+const routerBase = process.env.DEPLOY_ENV === 'MASTER' ? {
+  router: {
+    base: '/VueJS-Portfolio/'
+  }
+} : {}
+
 export default {
   mode: 'universal',
-
+  routerBase,
   /*
    ** Headers of the page
    */
