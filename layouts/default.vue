@@ -23,7 +23,6 @@
     </v-content>
     <v-bottom-nav
       :active.sync="bottomNav"
-      :color="color"
       :value="true"
       fixed
       dark
@@ -61,7 +60,7 @@ export default {
         },
         {
           icon: 'bubble_chart',
-          title: 'About',
+          title: 'Skills',
           to: '/about'
         },
         // {
