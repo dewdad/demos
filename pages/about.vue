@@ -134,63 +134,63 @@ export default {
   opacity: 1;
 }
 .angularjsClass {
-  background: url('../assets/angularjsIcon.png') repeat;
+  background: url('../assets/angularjsIcon.png') no-repeat;
   background-color: white;
-  background-position: 100% 100%;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
 }
 .angularClass {
-  background: url('../assets/angularIcon.png') repeat;
+  background: url('../assets/angularIcon.png') no-repeat;
   background-color: white;
-  background-position: 100% 100%;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
 }
 .vuejsClass {
-  background: url('../assets/vueJsIcon.jpg') repeat;
+  background: url('../assets/vueJsIcon.jpg') no-repeat;
   background-color: white;
-  background-position: 100% 100%;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
 }
 .jqueryClass {
-  background: url('../assets/jqueryIcon.png') repeat;
+  background: url('../assets/jqueryIcon.png') no-repeat;
   background-color: white;
-  background-position: 100% 100%;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
 }
 .phpClass {
-  background: url('../assets/phpIcon.png') repeat;
+  background: url('../assets/phpIcon.png') no-repeat;
   background-color: white;
-  background-position: 100% 100%;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
 }
 .golangClass {
-  background: url('../assets/golangIcon.png') repeat;
+  background: url('../assets/golangIcon.png') no-repeat;
   background-color: white;
-  background-position: 100% 100%;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
 }
 .nodejsClass {
-  background: url('../assets/nodejsIcon.png') repeat;
+  background: url('../assets/nodejsIcon.png') no-repeat;
   background-color: white;
-  background-position: 100% 100%;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
 }
 .ionicClass {
-  background: url('../assets/ionicIcon.jpg') repeat;
+  background: url('../assets/ionicIcon.jpg') no-repeat;
   background-color: white;
-  background-position: 100% 100%;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
 }
 .flutterClass {
-  background: url('../assets/flutterIcon.png') repeat;
+  background: url('../assets/flutterIcon.png') no-repeat;
   background-color: white;
-  background-position: 100% 100%;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
 }
 .xamarinClass {
-  background: url('../assets/xamarinIcon.png') repeat;
+  background: url('../assets/xamarinIcon.png') no-repeat;
   background-color: white;
-  background-position: 100% 100%;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
 }
 </style>
