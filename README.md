@@ -1,6 +1,6 @@
 # Demoing of issues with code
 
-> If you can recreate a problem, than you got have it.
+> If you can recreate a problem, than you've got it.
 
 ## Build Setup
 
