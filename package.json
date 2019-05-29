@@ -1,11 +1,11 @@
 {
-  "name": "paulcruz03-vuejs-portfolio",
+  "name": "vueplay",
   "version": "1.0.0",
-  "description": "Paul Cruz Portfolio using VueJS NuxtJS and Vuetify",
-  "author": "Paul Cruz",
+  "description": "VueJS NuxtJS and Vuetify",
+  "author": "Avital",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt -p 3223",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -17,10 +17,10 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
-    "vuetify": "^1.5.5",
-    "vuetify-loader": "^1.2.1",
-    "@nuxtjs/pwa": "^2.6.0"
+    "nuxt": "^2.7.1",
+    "vuetify": "^1.5.14",
+    "vuetify-loader": "^1.2.2",
+    "@nuxtjs/pwa": "^3.0.0-beta.16"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",

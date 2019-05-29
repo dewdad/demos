@@ -1,10 +1,10 @@
-# vue-nuxt-portfolio
+# Demoing of issues with code
 
-> Paul Cruz Portfolio using VueJS NuxtJS and Vuetify
+> If you can recreate a problem, than you got have it.
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 

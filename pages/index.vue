@@ -9,19 +9,12 @@
       }"
       class="container-home"
       column
-      justify-center
       align-center
       @mousemove="doDrag"
     >
       <v-flex xs12 sm8 md6>
-        <div class="title-home display-4 hidden-xs-only" :style="titleStyle">
-          PAUL CRUZ DEVELOPER
-        </div>
-        <div
-          class="title-home display-2 hidden-sm-and-up mt-5"
-          :style="titleStyle"
-        >
-          PAUL CRUZ DEVELOPER
+        <div class="title-home display-3 hidden-xs-only" :style="titleStyle">
+          COOL DEMOS
         </div>
         <div class="subtitle-home"></div>
       </v-flex>

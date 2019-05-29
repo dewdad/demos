@@ -1,15 +1,11 @@
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 import pkg from './package'
 
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/VueJS-Portfolio/'
-  }
-} : {}
-
 export default {
   mode: 'universal',
-  router: { base : process.env.DEPLOY_ENV === 'GH_PAGES' ? '/VueJS-Portfolio/' : '/'},
+  router: {
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/VueJS-Portfolio/' : '/'
+  },
   /*
    ** Headers of the page
    */

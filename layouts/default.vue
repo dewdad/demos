@@ -60,8 +60,8 @@ export default {
         },
         {
           icon: 'bubble_chart',
-          title: 'Skills',
-          to: '/about'
+          title: 'V-Calendar',
+          to: '/v-calendar'
         },
         // {
         //   icon: 'collections',
