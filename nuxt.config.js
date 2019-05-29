@@ -4,7 +4,7 @@ import pkg from './package'
 export default {
   mode: 'universal',
   router: {
-    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/VueJS-Portfolio/' : '/'
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/demos/' : '/'
   },
   /*
    ** Headers of the page
