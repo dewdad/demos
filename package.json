@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "dev": "npm run serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "dev": "npm run serve",
+    "gh-pages": "vue-cli-service gh-pages"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -32,6 +33,7 @@
     "tailwindcss": "^1.0.1",
     "vue-auto-routing": "^0.3.0",
     "vue-cli-plugin-auto-routing": "^0.2.1",
+    "vue-cli-plugin-gh-pages": "^0.4.0",
     "vue-template-compiler": "^2.6.10"
   }
 }
