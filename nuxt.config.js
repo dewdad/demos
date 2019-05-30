@@ -3,6 +3,12 @@ import pkg from './package'
 
 export default {
   mode: 'universal',
+  vue: {
+    config: {
+      productionTip: false,
+      devtools: true
+    }
+  },
   router: {
     base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/demos/' : '/'
   },
@@ -61,6 +67,13 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
+      if (ctx.isClient) {
+        config.devtool = 'source-map'
+        // console.log('config.devtool', config.devtool);
+      } else {
+        config.devtool = 'inline-source-map'
+        // console.log('config.devtool', config.devtool);
+      }
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
