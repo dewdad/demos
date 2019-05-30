@@ -17,11 +17,14 @@
     "gen:deploy": "npm run generate:gh-pages && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-beta.16",
     "cross-env": "^5.2.0",
+    "faker": "https://github.com/Marak/faker.js",
     "nuxt": "^2.7.1",
+    "v-calendar": "^1.0.0-beta.12",
     "vuetify": "^1.5.14",
     "vuetify-loader": "^1.2.2",
-    "@nuxtjs/pwa": "^3.0.0-beta.16"
+    "yarn": "^1.16.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
