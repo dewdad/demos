@@ -8499,10 +8499,9 @@ uuid@^3.0.1, uuid@^3.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
 
-v-calendar@^1.0.0-beta.13:
+"v-calendar@https://github.com/dewdad/v-calendar.git#next":
   version "1.0.0-beta.13"
-  resolved "https://registry.yarnpkg.com/v-calendar/-/v-calendar-1.0.0-beta.13.tgz#4c171ad8341b61c33bd985b0fcb9bc2035b125b2"
-  integrity sha512-0pGdHRXMwca8NhOt2+J1oJJVrU8WeS/lvut5kQO+208A6P5eCb/7DpI1lkZdYnpqXKz43lLvJIMbNXadyDSqvA==
+  resolved "https://github.com/dewdad/v-calendar.git#da89fe680ba0c053d9f828bfb2140818cab9a6f9"
   dependencies:
     lodash "^4.17.11"
     popper.js "^1.14.7"

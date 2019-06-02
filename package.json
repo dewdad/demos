@@ -14,7 +14,7 @@
     "core-js": "^2.6.5",
     "faker": "https://github.com/Marak/faker.js",
     "register-service-worker": "^1.6.2",
-    "v-calendar": "^1.0.0-beta.13",
+    "v-calendar": "https://github.com/dewdad/v-calendar.git#next",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vue-router-layout": "^0.1.2",

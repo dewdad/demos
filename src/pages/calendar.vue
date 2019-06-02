@@ -97,7 +97,7 @@ export default {
   },
   methods: {
     loadCalendarMeetings() {
-      // if I call initCalendarMeetings() here the calendar will show an inconsistant
+      this.initCalendarMeetings()
     },
     initCalendarMeetings() {
       this.calendarMeetings = (length =>
