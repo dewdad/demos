@@ -7,11 +7,14 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "dev": "npm run serve",
-    "gh-pages": "vue-cli-service gh-pages"
+    "gh-pages": "vue-cli-service gh-pages",
+    "build:deploy": "npm run build && npm run gh-pages"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "faker": "https://github.com/Marak/faker.js",
     "register-service-worker": "^1.6.2",
+    "v-calendar": "^1.0.0-beta.13",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vue-router-layout": "^0.1.2",
