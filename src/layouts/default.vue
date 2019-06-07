@@ -2,7 +2,8 @@
   <div>
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/calendar">V-Calendar Demo</router-link>
+      <router-link to="/calendar">V-Calendar Demo</router-link> |
+      <router-link to="/component-position">Component Position</router-link>
     </div>
     <router-view/>
   </div>

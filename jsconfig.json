@@ -1,0 +1,25 @@
+{
+    "baseUrl": ".",
+    "include": [
+      "src/**/*",
+      "tests/**/*",
+      "types/**/*.d.ts"
+    ],
+    "compilerOptions": {
+      "baseUrl": ".",
+      "target": "es6",
+      "module": "es6",
+      "paths": {
+        "@/*": [
+          "src/*"
+        ],
+        "@": [
+          "src/index.js",
+          "src/index.json",
+          "src/index.vue",
+          "src/index.scss",
+          "src/index.css"
+        ]
+      }
+    }
+  }
