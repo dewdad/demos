@@ -17,9 +17,9 @@
     "register-service-worker": "^1.6.2",
     "v-calendar": "next",
     "vue": "^2.6.10",
-    "vue-check-view": "^0.3.0",
     "vue-router": "^3.0.3",
     "vue-router-layout": "^0.1.2",
+    "vue-scrollactive": "^0.8.0",
     "vue-waypoint": "^3.2.2",
     "vuex": "^3.0.1"
   },

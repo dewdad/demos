@@ -1713,6 +1713,11 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
+bezier-easing@^2.0.3:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/bezier-easing/-/bezier-easing-2.1.0.tgz#c04dfe8b926d6ecaca1813d69ff179b7c2025d86"
+  integrity sha1-wE3+i5JtbsrKGBPWn/F5t8ICXYY=
+
 bfj@^6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/bfj/-/bfj-6.1.1.tgz#05a3b7784fbd72cfa3c22e56002ef99336516c48"
@@ -8933,11 +8938,6 @@ vue-auto-routing@^0.3.0:
   dependencies:
     vue-route-generator "^0.3.0"
 
-vue-check-view@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/vue-check-view/-/vue-check-view-0.3.0.tgz#813509a73916dd99483eaa4b1b24ca189c50ca7b"
-  integrity sha512-2IR2m4MCgOG/9UQaIn7cvvqbDcvUmPavun8nBMieRxGbhqvlUorjLIwJqvuFXruBO73HXXbCcrVKxnGr4ub5ag==
-
 vue-cli-plugin-antv@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/vue-cli-plugin-antv/-/vue-cli-plugin-antv-1.1.1.tgz#1763af35065eacc5d503496eb599b9e2ca55b174"
@@ -9021,6 +9021,13 @@ vue-router@^3.0.3:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.6.tgz#2e4f0f9cbb0b96d0205ab2690cfe588935136ac3"
   integrity sha512-Ox0ciFLswtSGRTHYhGvx2L44sVbTPNS+uD2kRISuo8B39Y79rOo0Kw0hzupTmiVtftQYCZl87mwldhh2L9Aquw==
+
+vue-scrollactive@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/vue-scrollactive/-/vue-scrollactive-0.8.0.tgz#0f1b741018d7deee9fe3d120feb3ad23a8253629"
+  integrity sha512-WHD7aGXt2nW6qOaunTkyWryKdi4gB0N5jXxCgNRsg7HEJHXm3PHR9VbDNOIakWj+/NP1euGhM71AB+0aXUltrA==
+  dependencies:
+    bezier-easing "^2.0.3"
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
