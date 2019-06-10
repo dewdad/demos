@@ -1,3 +1,4 @@
 import Vue from 'vue';
-var VueScrollactive = require('vue-scrollactive');
+const VueScrollactive = require('vue-scrollactive');
+console.log(VueScrollactive)
 Vue.use(VueScrollactive);

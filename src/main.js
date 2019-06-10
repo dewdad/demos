@@ -6,6 +6,9 @@ import "./registerServiceWorker";
 import VCalendar from "v-calendar";
 import "./boot";
 
+import VueScrollactive from 'vue-scrollactive';
+Vue.use(VueScrollactive);
+
 console.log({
   currRoute: router.currentRoute,
   href: new URLSearchParams(location.search)

@@ -1,40 +1,48 @@
 <template>
   <div class="demo-container">
     <h1>Top offset</h1>
-    <div id="container-7384" class="overflow-auto h-screen">
+    <div id="meeting-scroll-container" @scroll="onItemsScroll" class="overflow-auto h-screen mt-20 border-2">
       <div
-        class="list-item-tracked w-full h-56 "
+        class="list-item-tracked w-full border"
+        :style="{height: randomHeight(i)}"
         v-for="i in 10"
         :key="'item-' + i"
         :id="'item-' + i"
       >
         <div> {{i}} </div>
       </div>
+      <div class="h-64 bg-gray-800" />
     </div>
   </div>
 </template>
 <script>
+import debounce from 'lodash/debounce'
 export default {
+    data(){
+      return {
+        meetingContainerTopOffset: null
+      }
+    },
     mounted(){
-        var options = {
-            root: document.querySelector('#container-7384'),
-            rootMargin: '0px',
-            threshold: 1.0
-        }
-
-        var observer = new IntersectionObserver(this.scrollHandler, options);
-        var target = document.querySelector('#item-1');
-        observer.observe(target)
+      this.meetingContainerTopOffset = document.querySelector('#meeting-scroll-container').getBoundingClientRect().y
     },
     methods:{
-        scrollHandler(entries, observer){
-            console.log({entries, observer})
-
-            const firstEntry = entries[0];
-            if (firstEntry.isIntersecting) {
-                // Handle intersection here...
-            }
+      randomHeight: () => (Math.random() * (12 - 4) + 4)+'rem',
+      onItemsScroll: debounce(function(evt){
+        const items = evt.target.querySelectorAll('.list-item-tracked')
+        const meetingContainerTopOffset = document.querySelector('#meeting-scroll-container').getBoundingClientRect().y
+        let nearestToTopItem = null
+        let nearestToTopValue = Infinity
+        for(let i=0, len = items.length; i<len; i++){
+          let itemOffsetFromTop = Math.abs(items[i].getBoundingClientRect().y - meetingContainerTopOffset)
+          if(itemOffsetFromTop < nearestToTopValue){
+            nearestToTopValue = itemOffsetFromTop;
+            nearestToTopItem = items[i];
+          }else break
         }
+        window.topItemId = nearestToTopItem.id
+        console.log({id: nearestToTopItem.id, offset: nearestToTopItem.getBoundingClientRect().y - meetingContainerTopOffset})
+      }, 300)
     }
 }
 </script>
