@@ -24,7 +24,7 @@
     "v-calendar": "^1.0.0-beta.12",
     "vuetify": "^1.5.14",
     "vuetify-loader": "^1.2.2",
-    "yarn": "^1.16.0"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
